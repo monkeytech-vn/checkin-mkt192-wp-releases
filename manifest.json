@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.4.3",
+  "version": "5.3.4.4",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
-  "last_updated": "2026-08-02",
+  "last_updated": "2026-09-07",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytechvn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.4.3.zip",
+  "package": "https://raw.githubusercontent.com/monkeytechvn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.4.4.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.4.3</h4><ul><li>🐛 <strong>Thanh nút ở form đặt lịch để nền trong suốt nên nội dung lòi lên đè vào nút</strong> — <code>.button-container</code> dính đáy (<code>position: sticky</code>) nhưng <code>background: transparent</code>, nên khi nội dung dài hơn khung modal thì chữ phía sau hiện xuyên qua và chồng lên nút. Nay đổi sang nền mờ dần về màu modal để nội dung cuộn chui gọn xuống dưới. Lỗi có sẵn từ trước, lộ ra rõ khi thông báo thợ tạm dừng dài 3 dòng.</li></ul>"
+  "changelog": "<h4>5.3.4.4</h4><ul><li>🐛 <strong>Thợ tích \"Not Image\" trên hoá đơn đã thanh toán thì lý do không được lưu, mà app vẫn báo thành công</strong> — API cập nhật hoá đơn chỉ cho sửa <code>payment_method</code>, <code>combined_payment_details</code>, <code>tips</code>, <code>total</code> khi hoá đơn ở trạng thái <code>paid</code>; <code>not_image</code> nằm ngoài danh sách nên bị bỏ qua <strong>im lặng</strong> rồi vẫn trả về <code>success</code>. Trong khi đó nút \"Not Image\" ở màn chi tiết hoá đơn <strong>chỉ hiện với hoá đơn đã thanh toán</strong> — tức mọi lần thợ tích bù sau ca đều mất trắng, app vẫn hiện \"Đã gửi lý do thành công!\". Nay <code>not_image</code> được phép ghi cả khi hoá đơn đã thanh toán.</li><li>🚨 <strong>Không còn \"nuốt\" dữ liệu trong im lặng</strong> — nếu mọi trường client gửi lên đều bị từ chối vì hoá đơn đã thanh toán, API trả lỗi <code>409 invoice_locked_paid</code> kèm tên trường bị chặn thay vì báo thành công; các trường bị từ chối cũng được ghi vào <code>update_invoice.log</code> để còn truy vết. App thợ hiện đúng thông báo lỗi của server thay vì câu chung chung.</li><li>🎯 <strong>Nút \"Not Image\" trong modal chi tiết ghi nhầm hoá đơn</strong> — nút này đọc hoá đơn đang active ở màn thanh toán (<code>invoices[currentInvoiceIndex]</code>) chứ không phải hoá đơn đang mở trong modal, nên lý do có thể rơi sang hoá đơn khác. Nay hoá đơn được chốt ngay lúc mở hộp thoại và truyền thẳng vào.</li><li>🧹 <strong>Hộp thoại chọn lý do không xoá lựa chọn cũ</strong> — mở lại cho hoá đơn khác vẫn còn tick của lần trước, dễ gửi nhầm lý do. Nay reset toàn bộ mỗi lần mở, và khoá nút \"Gửi\" trong lúc đang gửi để tránh bấm hai lần.</li></ul>"
 }
