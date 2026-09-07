@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.4.5",
+  "version": "5.3.4.6",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
   "last_updated": "2026-09-07",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytechvn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.4.5.zip",
+  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.4.6.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.4.5</h4><ul><li>🗂️ <strong>Giữ lại <code>update_invoice.log</code>, không xoá theo chu kỳ nữa</strong> — cron dọn log 2 ngày/lần trước đây xoá sạch mọi file <code>.log</code> (chỉ chừa <code>cleanup_history.log</code>), nên mất luôn nhật ký sửa hoá đơn — đúng thứ cần để đối chất khi thợ báo \"em có tích lý do rồi\". Nay <code>update_invoice.log</code> nằm trong danh sách giữ lại; để không phình vô hạn, file quá 20MB sẽ bị cắt bỏ nửa cũ và ghi dấu mốc cắt, giữ nguyên các bản ghi mới.</li></ul>"
+  "changelog": "<h4>5.3.4.6</h4><ul><li>🔗 <strong>Kênh cập nhật trỏ thẳng tên tổ chức GitHub mới</strong> — tổ chức đã đổi tên <code>monkeytechvn</code> → <code>monkeytech-vn</code>; trước đó plugin vẫn gọi địa chỉ cũ và chỉ chạy được nhờ chuyển hướng tự động của GitHub. Nay <code>CHECKIN_UPDATE_API</code>, <code>bin/release.sh</code> và workflow phát hành đều dùng địa chỉ mới, không còn phụ thuộc chuyển hướng.</li><li>🤖 <strong>Phát hành tự động chạy lại được</strong> — deploy key của kênh phát hành đã chết sau khi tổ chức đổi tên, khiến hai bản 5.3.4.4 và 5.3.4.5 phải đóng gói và đẩy tay. Đã thay khoá mới nên từ bản này, đẩy tag <code>v*</code> là GitHub Actions tự đóng gói zip, cập nhật <code>manifest.json</code> và tự kiểm tra lại gói mà khách sẽ tải.</li></ul>"
 }
