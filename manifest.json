@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.6.8",
+  "version": "5.3.6.9",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
   "last_updated": "2026-09-08",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.6.8.zip",
+  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.6.9.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.6.8</h4><ul><li>🧾 <strong>Truy thu tự động không chạy trên VG</strong> (bật cài đặt, làm mới phiếu vẫn không thấy): câu gom hoá đơn không ảnh và đánh giá thấp dùng JOIN <code>invoices_data</code> ↔ <code>invoices_data_detail</code> / <code>customer_reviews</code> theo <code>invoice_id</code> — đúng kiểu JOIN trả rỗng trên VG đã gặp ở KPI Google Maps (5.3.6.2). Nay cả hai nhánh lấy mã hoá đơn trước rồi truy <code>IN (...)</code>, không JOIN. Thế Giáp 08/2026 có 9 hoá đơn không ảnh vi phạm thật (6 hoá đơn khác mang ghi chú *Hệ thống bù* được bỏ qua).</li></ul>"
+  "changelog": "<h4>5.3.6.9</h4><ul><li>🚨 <strong>Truy thu không ảnh bắt oan khách vãng lai</strong>: VG lưu tên khách chữ in *\"KHÁCH VÃNG LAI\"*, code so đúng chữ *\"Khách vãng lai\"* nên không bỏ qua → Thế Giáp 08/2026 bị trừ 40 hoá đơn (đúng phải 9), Nguyễn Phát 37 (đúng 1). Nay so sánh không phân biệt hoa thường; đã tính lại các phiếu 08 chưa chốt trên VG.</li></ul>"
 }
