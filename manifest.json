@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.6.4",
+  "version": "5.3.6.5",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
   "last_updated": "2026-09-08",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.6.4.zip",
+  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.6.5.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.6.4</h4><ul><li>✂️ Chú thích KPI đăng bài theo ngày công gọn lại: *26 bài / 27 ngày công (KPI theo ngày công)* — bỏ đoạn lặp \"· 27 ngày công\".</li></ul>"
+  "changelog": "<h4>5.3.6.5</h4><ul><li>📘 <strong>Đồng bộ Facebook: popup mở nhưng không hiện đăng nhập</strong> (bản 5.3.6.3 gọi <code>FB.login</code> trong callback <code>getLoginStatus</code>, không còn là thao tác bấm → trình duyệt chặn cửa sổ đăng nhập). Nay <code>FB.login</code> chạy <strong>đồng bộ ngay trong click</strong>; token hết hạn → hỏi SDK lấy phiên mới không cần bấm, không có phiên thì nút đổi thành *\"Đăng nhập Facebook để đồng bộ\"* để thợ bấm; khi SDK sẵn sàng tự làm mới token nền cho thợ đã kết nối.</li></ul>"
 }
