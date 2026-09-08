@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.6.6",
+  "version": "5.3.6.7",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
   "last_updated": "2026-09-08",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.6.6.zip",
+  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.6.7.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.6.6</h4><ul><li>🧾 <strong>Khối \"Truy thu kỳ này\" trên phiếu lương ghi rõ từng hoá đơn</strong> (thợ và admin cùng thấy): hoá đơn admin đánh dấu truy thu tay (mã HĐ, ngày, dịch vụ/hoá chất, doanh số bị trừ) và phiếu trừ tự động theo Cài đặt lương (mã HĐ · lý do *khách đánh giá thấp* / *hoá đơn không ảnh* · số tiền, tổng ở tiêu đề). Admin có nút <strong>Bỏ qua</strong> từng hoá đơn (không truy thu, tính lại lương ngay) và <strong>Khôi phục</strong>; hoá đơn đã bỏ qua hiện gạch mờ. API <code>DELETE vg/v1/salary-adjustments</code> với phiếu trừ tự động nay đổi thành dấu *bỏ qua* (không mọc lại khi tính lại), gọi lần nữa trên dấu đó = khôi phục. Phiếu trả <code>penalty_invoices</code>.</li><li>🛡️ Truy thu hoá đơn không ảnh <strong>bỏ qua hoá đơn có ghi chú hệ thống</strong> *\"Hệ thống bù: thợ đã tích nhưng bug v5.3.4.3 không lưu\"* (thợ đã chọn lý do, hệ thống mất dữ liệu) — VG tháng 8 có hàng chục hoá đơn dạng này, nếu không sẽ bị truy thu oan.</li><li>🪟 Modal <strong>Xem lịch sử</strong> và <strong>Lương TB</strong> mở từ phiếu lương bị phiếu lương che → nay nổi lên trên.</li><li>ℹ️ Cài đặt truy thu ghi rõ: *100% = trừ toàn bộ giá trị hoá đơn; muốn thu lại đúng hoa hồng thì nhập bằng % hoa hồng dịch vụ của thợ (VD 45)*.</li></ul>"
+  "changelog": "<h4>5.3.6.7</h4><ul><li>⏳ <strong>Kỳ đang chạy (phiếu tạm tính) KHÔNG áp KPI vào lương</strong>: vẫn đánh giá và hiện thanh tiến trình để thợ theo dõi (gắn nhãn *tạm tính · chưa áp vào lương*), nhưng không trừ % hoa hồng, không cắt thưởng sản phẩm; KPI chỉ áp khi kỳ đã hết (tháng trước trở về). Phiếu tháng 9 trên VG tự trả lại phần −5% đã trừ khi mở lại.</li><li>💸 <strong>Truy thu kiểu % = trừ khỏi doanh số dịch vụ / hoá chất của hoá đơn trước khi nhân hoa hồng</strong> (Kent chốt): 100% = bỏ hẳn hoá đơn khỏi doanh số như admin truy thu tay, <strong>sản phẩm trên hoá đơn vẫn tính</strong>; dòng admin đã truy thu tay không trừ lần hai. Ví dụ hoá đơn cắt 100k + hoá chất 100k: doanh số cắt 2.100k → 2.000k, hoá chất 1.100k → 1.000k rồi mới nhân %. Lưu dạng <code>salary_adjustments.kind='base_penalty'</code> (category service|chemical), không vào Tổng trừ. Kiểu *số tiền cố định* vẫn là phiếu trừ. Hoá đơn kỳ đã trả lương → phiếu trừ = hoa hồng đã trả × %. <code>kind</code> mở rộng VARCHAR(20) (db <strong>8.8.0</strong>).</li><li>🧾 Khối *Truy thu kỳ này* gom theo hoá đơn: *HĐ … · lý do · DV −a · HC −b*, nút <strong>Bỏ qua</strong> gom cả hai dòng của hoá đơn về một dấu bỏ qua; <strong>Khôi phục</strong> tạo lại.</li><li>🏷️ KPI admin ghi đè tay hiện <strong>\"Admin duyệt đạt\" / \"Admin duyệt không đạt\"</strong> thay cho icon bút; nhãn *Đăng bài Facebook* → <strong>Content Fb</strong> trên phiếu và modal KPI.</li></ul>"
 }
