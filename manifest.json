@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.6.9",
+  "version": "5.3.7.0",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
   "last_updated": "2026-09-08",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.6.9.zip",
+  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.7.0.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.6.9</h4><ul><li>🚨 <strong>Truy thu không ảnh bắt oan khách vãng lai</strong>: VG lưu tên khách chữ in *\"KHÁCH VÃNG LAI\"*, code so đúng chữ *\"Khách vãng lai\"* nên không bỏ qua → Thế Giáp 08/2026 bị trừ 40 hoá đơn (đúng phải 9), Nguyễn Phát 37 (đúng 1). Nay so sánh không phân biệt hoa thường; đã tính lại các phiếu 08 chưa chốt trên VG.</li></ul>"
+  "changelog": "<h4>5.3.7.0</h4><ul><li>🧾 <strong>Khối \"Truy thu kỳ này\" bố cục mới</strong>: tiêu đề và tổng tiền cùng dòng (canh phải, cùng cỡ chữ); mỗi hoá đơn một hàng 2 cột × 2 dòng - trái: *mã hoá đơn - tên khách* và badge lý do (nền đỏ nhạt, chữ đỏ đậm: *Hoá đơn không ảnh* / *Khách đánh giá thấp* / *Admin truy thu* / *Đã bỏ qua*); phải: ngày và tổng tiền hoá đơn kèm icon <strong>mắt</strong> (mở modal chi tiết hoá đơn: khách, SĐT, ảnh, lý do không ảnh, từng dòng dịch vụ - sản phẩm, dòng đã truy thu) và icon <strong>xoá</strong> (bỏ qua truy thu, admin) hoặc <strong>hoàn</strong> (khôi phục). Bỏ chữ \"Bỏ qua\" và chữ \"Dịch vụ - 840.000\". Phiếu trả thêm <code>invoice_briefs</code>.</li><li>✏️ Toàn bộ dấu gạch dài \"—\" trong giao diện lương / cài đặt / KPI / đồng bộ FB đổi thành \"-\".</li></ul>"
 }
