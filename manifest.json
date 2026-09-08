@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.6.5",
+  "version": "5.3.6.6",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
   "last_updated": "2026-09-08",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.6.5.zip",
+  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.6.6.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.6.5</h4><ul><li>📘 <strong>Đồng bộ Facebook: popup mở nhưng không hiện đăng nhập</strong> (bản 5.3.6.3 gọi <code>FB.login</code> trong callback <code>getLoginStatus</code>, không còn là thao tác bấm → trình duyệt chặn cửa sổ đăng nhập). Nay <code>FB.login</code> chạy <strong>đồng bộ ngay trong click</strong>; token hết hạn → hỏi SDK lấy phiên mới không cần bấm, không có phiên thì nút đổi thành *\"Đăng nhập Facebook để đồng bộ\"* để thợ bấm; khi SDK sẵn sàng tự làm mới token nền cho thợ đã kết nối.</li></ul>"
+  "changelog": "<h4>5.3.6.6</h4><ul><li>🧾 <strong>Khối \"Truy thu kỳ này\" trên phiếu lương ghi rõ từng hoá đơn</strong> (thợ và admin cùng thấy): hoá đơn admin đánh dấu truy thu tay (mã HĐ, ngày, dịch vụ/hoá chất, doanh số bị trừ) và phiếu trừ tự động theo Cài đặt lương (mã HĐ · lý do *khách đánh giá thấp* / *hoá đơn không ảnh* · số tiền, tổng ở tiêu đề). Admin có nút <strong>Bỏ qua</strong> từng hoá đơn (không truy thu, tính lại lương ngay) và <strong>Khôi phục</strong>; hoá đơn đã bỏ qua hiện gạch mờ. API <code>DELETE vg/v1/salary-adjustments</code> với phiếu trừ tự động nay đổi thành dấu *bỏ qua* (không mọc lại khi tính lại), gọi lần nữa trên dấu đó = khôi phục. Phiếu trả <code>penalty_invoices</code>.</li><li>🛡️ Truy thu hoá đơn không ảnh <strong>bỏ qua hoá đơn có ghi chú hệ thống</strong> *\"Hệ thống bù: thợ đã tích nhưng bug v5.3.4.3 không lưu\"* (thợ đã chọn lý do, hệ thống mất dữ liệu) — VG tháng 8 có hàng chục hoá đơn dạng này, nếu không sẽ bị truy thu oan.</li><li>🪟 Modal <strong>Xem lịch sử</strong> và <strong>Lương TB</strong> mở từ phiếu lương bị phiếu lương che → nay nổi lên trên.</li><li>ℹ️ Cài đặt truy thu ghi rõ: *100% = trừ toàn bộ giá trị hoá đơn; muốn thu lại đúng hoa hồng thì nhập bằng % hoa hồng dịch vụ của thợ (VD 45)*.</li></ul>"
 }
