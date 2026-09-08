@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.6.7",
+  "version": "5.3.6.8",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
   "last_updated": "2026-09-08",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.6.7.zip",
+  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.6.8.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.6.7</h4><ul><li>⏳ <strong>Kỳ đang chạy (phiếu tạm tính) KHÔNG áp KPI vào lương</strong>: vẫn đánh giá và hiện thanh tiến trình để thợ theo dõi (gắn nhãn *tạm tính · chưa áp vào lương*), nhưng không trừ % hoa hồng, không cắt thưởng sản phẩm; KPI chỉ áp khi kỳ đã hết (tháng trước trở về). Phiếu tháng 9 trên VG tự trả lại phần −5% đã trừ khi mở lại.</li><li>💸 <strong>Truy thu kiểu % = trừ khỏi doanh số dịch vụ / hoá chất của hoá đơn trước khi nhân hoa hồng</strong> (Kent chốt): 100% = bỏ hẳn hoá đơn khỏi doanh số như admin truy thu tay, <strong>sản phẩm trên hoá đơn vẫn tính</strong>; dòng admin đã truy thu tay không trừ lần hai. Ví dụ hoá đơn cắt 100k + hoá chất 100k: doanh số cắt 2.100k → 2.000k, hoá chất 1.100k → 1.000k rồi mới nhân %. Lưu dạng <code>salary_adjustments.kind='base_penalty'</code> (category service|chemical), không vào Tổng trừ. Kiểu *số tiền cố định* vẫn là phiếu trừ. Hoá đơn kỳ đã trả lương → phiếu trừ = hoa hồng đã trả × %. <code>kind</code> mở rộng VARCHAR(20) (db <strong>8.8.0</strong>).</li><li>🧾 Khối *Truy thu kỳ này* gom theo hoá đơn: *HĐ … · lý do · DV −a · HC −b*, nút <strong>Bỏ qua</strong> gom cả hai dòng của hoá đơn về một dấu bỏ qua; <strong>Khôi phục</strong> tạo lại.</li><li>🏷️ KPI admin ghi đè tay hiện <strong>\"Admin duyệt đạt\" / \"Admin duyệt không đạt\"</strong> thay cho icon bút; nhãn *Đăng bài Facebook* → <strong>Content Fb</strong> trên phiếu và modal KPI.</li></ul>"
+  "changelog": "<h4>5.3.6.8</h4><ul><li>🧾 <strong>Truy thu tự động không chạy trên VG</strong> (bật cài đặt, làm mới phiếu vẫn không thấy): câu gom hoá đơn không ảnh và đánh giá thấp dùng JOIN <code>invoices_data</code> ↔ <code>invoices_data_detail</code> / <code>customer_reviews</code> theo <code>invoice_id</code> — đúng kiểu JOIN trả rỗng trên VG đã gặp ở KPI Google Maps (5.3.6.2). Nay cả hai nhánh lấy mã hoá đơn trước rồi truy <code>IN (...)</code>, không JOIN. Thế Giáp 08/2026 có 9 hoá đơn không ảnh vi phạm thật (6 hoá đơn khác mang ghi chú *Hệ thống bù* được bỏ qua).</li></ul>"
 }
