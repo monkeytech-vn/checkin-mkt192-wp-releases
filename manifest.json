@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.5.4",
+  "version": "5.3.5.5",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
   "last_updated": "2026-09-08",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.5.4.zip",
+  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.5.5.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.5.4</h4><ul><li>🧾 <strong>Hàng nút modal phiếu lương là footer cố định</strong> của modal (lớp trên, đứng yên), phần phiếu cuộn bên dưới trong khung riêng; bản 5.3.5.3 dùng sticky nên hàng nút trôi theo và đè lên nội dung. Modal giới hạn 92vh (mobile 94vh, bo góc trên, chừa safe-area), nút đóng cố định góc phải trên.</li></ul>"
+  "changelog": "<h4>5.3.5.5</h4><ul><li>🚨 <strong>Kỳ chưa có thẻ hoa hồng (trước khi gom hạng) bị tính theo % tham chiếu của hạng mới</strong> — VG: Hoàng Huy 08/2026 rớt từ 45% xuống 40% (11.172.000 thay vì 12.568.500), Minh Phương 40% thay 45%, Vũ Phương hoá chất 20% thay 45%. Nay khi kỳ không có thẻ, lấy % của <strong>bậc cũ đang áp</strong> (<code>legacy_level_name</code> → bảng bậc cũ hoặc đọc mã trong tên). Đã tính lại 5 phiếu 08/2026 chưa chốt trên VG, số về đúng như trước migration; 2 phiếu đã chốt (Xuân Tiến, Bảo Trung) không bị đụng.</li></ul>"
 }
