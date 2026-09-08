@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.5.2",
+  "version": "5.3.5.3",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
   "last_updated": "2026-09-08",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.5.2.zip",
+  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.5.3.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.5.2</h4><ul><li>🐛 Hồ sơ: \"tên bậc cũ\" của hạng hiện tại ưu tiên <strong>dòng bậc đang active</strong> (lương thật tính theo dòng này) thay vì dòng có ngày mới nhất — VG có thợ được set active ở dòng cũ hơn (Minh Phương: active <code>Cao cấp 3 (C45_20)</code> 2023, dòng <code>Chuyên gia 2 (C50_20)</code> 2025 không active).</li></ul>"
+  "changelog": "<h4>5.3.5.3</h4><ul><li>🧾 <strong>Modal phiếu lương (admin) = chính cái phiếu</strong>: bỏ khung trắng bên ngoài, nút đóng nhỏ ở góc phải trên của phiếu, <strong>hàng nút thao tác dính đáy</strong> khi cuộn phiếu dài. Đóng modal <strong>không tải lại danh sách</strong> nữa: nếu trong lúc mở có thao tác (làm mới, đồng ý, thanh toán, thẻ hoa hồng, thưởng/trừ) thì chỉ <strong>card của thợ đó</strong> được cập nhật tại chỗ (nháy viền nhẹ) cùng khối tổng quan; không thao tác thì không đụng gì.</li><li>🪪 Hồ sơ → bấm dòng phiếu lương → <strong>mở modal phiếu ngay</strong> (không đổi kỳ / vẽ lại danh sách).</li><li>🃏 Danh sách lương admin <strong>3 card / hàng</strong> (2 ở màn vừa, 1 ở mobile), <strong>avatar ảnh thật</strong> của thợ (API lương trả thêm <code>avatar</code>); phiếu lương cũng dùng ảnh thật.</li><li>🎯 <strong>Modal Cài đặt KPI làm lại</strong> theo hệ giao diện phiếu lương: tiêu đề theo loại KPI (dịch vụ / sản phẩm / đăng bài / đánh giá), ô mục tiêu có đơn vị, \"Đạt → thưởng\" / \"Không đạt → phạt\", nhân viên chọn bằng <strong>chip</strong> (Chọn tất cả / Bỏ chọn, đếm số đã chọn), khoảng thời gian 2 ô ngày; giữ nguyên id/class nên lưu/sửa/xoá như cũ.</li></ul>"
 }
