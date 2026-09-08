@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.6.3",
+  "version": "5.3.6.4",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
   "last_updated": "2026-09-08",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.6.3.zip",
+  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.6.4.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.6.3</h4><ul><li>🔁 <strong>Trang cài đặt admin tự reload về \"Ngày OFF đặc biệt\" khi bấm tab Thợ ở Lương Nhân Viên</strong> (hiện hộp *Confirm Form Resubmission* khi tải lại). Nguyên nhân: các mục nằm trong <code>&lt;form method=\"post\"&gt;</code>, còn bộ chặn submit chỉ được gắn <strong>sau khi cả chuỗi fetch khởi tạo xong</strong> (vài giây trên hosting; một fetch lỗi là không bao giờ gắn) — nút tab không có <code>type=\"button\"</code> nên bấm là POST cả form. Nay gắn bộ chặn ngay khi trang tải, nút tab và nút sửa/xoá KPI thêm <code>type=\"button\"</code>, bỏ qua submit không có nút phát sinh.</li><li>📘 <strong>Đồng bộ Facebook với user đã từng đồng bộ</strong>: trước luôn gọi <code>FB.login</code> kèm <code>auth_type: 'reauthenticate'</code> → Facebook bắt nhập lại mật khẩu, trên iPhone nhảy sang web trắng rồi sang app FB, quay về không có phiên → \"Bạn cần cấp quyền để đồng bộ Facebook!\" (user chưa từng cấp quyền thấy hộp đồng ý bình thường nên vẫn chạy). Nay: token còn dùng → dùng ngay; token hết hạn (lỗi 190/OAuth) → xoá và <strong>tự kết nối lại một lần</strong>; hỏi <code>FB.getLoginStatus</code> trước, chỉ <code>FB.login</code> thường khi chưa kết nối, <code>rerequest</code> chỉ khi thiếu quyền <code>user_posts</code>. Bốn đoạn lặp gộp thành một luồng; tab Hôm nay/Tháng này trong popup cũng tự kết nối thay vì chỉ báo lỗi.</li></ul>"
+  "changelog": "<h4>5.3.6.4</h4><ul><li>✂️ Chú thích KPI đăng bài theo ngày công gọn lại: *26 bài / 27 ngày công (KPI theo ngày công)* — bỏ đoạn lặp \"· 27 ngày công\".</li></ul>"
 }
