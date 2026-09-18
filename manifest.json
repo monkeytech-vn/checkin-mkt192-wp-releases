@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.7.6",
+  "version": "5.3.8.0",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
   "last_updated": "2026-09-18",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.7.6.zip",
+  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.8.0.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.7.6</h4><ul><li>🧮 <strong>Khối \"Bảng chỉ số\" không hiện trong modal chỉnh sửa thông báo</strong> (5.3.7.5): hàm dựng 4 ô quên bật lại khối vốn ẩn mặc định, nên sửa nhãn / biến của bảng chỉ số trên card Lark là bất khả. Nay khối hiện đúng với loại thông báo có bảng chỉ số và vẫn ẩn với các loại khác.</li><li>➕ Mỗi ô có số thứ tự (Ô 1 đến Ô 4) và chú thích khi rê chuột. Bấm một biến ở mục *Biến có thể sử dụng* nay chèn vào <strong>ô vừa bấm</strong> (tiêu đề, nội dung hoặc ô bảng chỉ số) thay vì luôn chèn vào nội dung.</li></ul>"
+  "changelog": "<h4>5.3.8.0</h4><ul><li>⏰ <strong>Báo cáo chấm công cuối ngày qua Lark</strong> (chủ VG yêu cầu), mặc định 23:00 mỗi ngày, ba nhóm: <strong>đi trễ phải nộp heo</strong> (@mention thợ, giờ vào, số phút trễ, tiền phạt), <strong>chưa chấm công vào</strong>, <strong>quên chấm công ra</strong> (giờ vào và ca). Thợ có đơn *Đi trễ/Về sớm* đã duyệt không bị tính nộp heo (duyệt đơn đã đưa tiền phạt về 0); danh sách chưa chấm công vào đã trừ người có đơn nghỉ được duyệt. Ngày sạch vẫn gửi card xanh.</li><li>🤖 Loại thông báo Lark mới <strong>\"Báo cáo chấm công cuối ngày - đi trễ, nộp heo\"</strong> (<code>late_checkin_report</code>, webhook) và nhóm <strong>Chấm công</strong> trên trang Push Notifications, đủ tiêu đề / nội dung / bảng 4 chỉ số / vai trò nhận push như báo cáo truy thu. Biến: <code>{date} {late_count} {late_total} {no_checkin_count} {no_checkout_count} {on_duty_count} {penalty_rule} {late_list}</code>.</li><li>🕘 <strong>Giờ gửi đổi được ngay trong Push Notifications</strong> cho cả hai báo cáo cuối ngày (ô *Giờ gửi hằng ngày*, giờ Việt Nam). Lưu xong lịch cron tự đặt lại, không cần kích hoạt lại plugin.</li><li>🧾 Báo cáo truy thu hoá đơn không ảnh dời sang <strong>23:05</strong> để không chạy trùng báo cáo chấm công 23:00.</li></ul>"
 }
