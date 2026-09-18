@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.8.2",
+  "version": "5.3.8.3",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
   "last_updated": "2026-09-18",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.8.2.zip",
+  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.8.3.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.8.2</h4><ul><li>👥 <strong>Chọn vai trò bị áp phạt đi trễ</strong> (Cài đặt lương → *Phạt đi trễ / về sớm* → *Áp dụng cho vai trò*): pill chọn nhiều vai trò, không chọn gì = áp cho tất cả như trước. Vai trò không được chọn thì <strong>không bị trừ tiền lúc chấm công</strong> và <strong>không xuất hiện trong báo cáo chấm công cuối ngày</strong> (cả ba nhóm: đi trễ, chưa chấm công vào, quên chấm công ra). Chủ VG dùng để loại quản lý và thu ngân ra khỏi danh sách nộp heo. Cột <code>apply_roles</code> của bảng <code>penalty_settings</code>, tự thêm khi cập nhật plugin.</li><li>🎨 <strong>Modal cài đặt phạt thiết kế lại</strong>: ba khối rõ ràng (*Phạt tiền đi trễ*, *Áp dụng cho vai trò*, *Phạt biên bản*), công tắc kiểu mới có mô tả ngắn, hai nút chọn cách tính tiền phạt (*Một mức cố định* / *Theo số phút trễ*) thay cho công tắc khó hiểu, ô nhập có đơn vị đ / % / lần ngay bên trong.</li><li>💰 <strong>Số tiền hiển thị theo kiểu Việt Nam</strong>: gõ tới đâu tự chấm phần nghìn tới đó (<code>50.000</code> thay cho <code>50000,00</code>), bỏ hai số 0 thập phân thừa. Bảng mức phạt theo phút cũng đổi sang định dạng này.</li></ul>"
+  "changelog": "<h4>5.3.8.3</h4><ul><li>👥 <strong>Chọn vai trò bị áp phạt đi trễ</strong> (Cài đặt lương → *Phạt đi trễ / về sớm* → *Áp dụng cho vai trò*): pill chọn nhiều vai trò, không chọn gì = áp cho tất cả như trước. Vai trò không được chọn thì <strong>không bị trừ tiền lúc chấm công</strong> và <strong>không xuất hiện trong báo cáo chấm công cuối ngày</strong> (cả ba nhóm: đi trễ, chưa chấm công vào, quên chấm công ra). Chủ VG dùng để loại quản lý và thu ngân ra khỏi danh sách nộp heo. Cột <code>apply_roles</code> của bảng <code>penalty_settings</code>, tự thêm khi cập nhật plugin (db <strong>8.9.0</strong>).</li><li>🎨 <strong>Modal cài đặt phạt thiết kế lại</strong>: ba khối rõ ràng (*Phạt tiền đi trễ*, *Áp dụng cho vai trò*, *Phạt biên bản*), công tắc kiểu mới có mô tả ngắn, hai nút chọn cách tính tiền phạt (*Một mức cố định* / *Theo số phút trễ*) thay cho công tắc khó hiểu, ô nhập có đơn vị đ / % / lần ngay bên trong.</li><li>💰 <strong>Số tiền hiển thị theo kiểu Việt Nam</strong>: gõ tới đâu tự chấm phần nghìn tới đó (<code>50.000</code> thay cho <code>50000,00</code>), bỏ hai số 0 thập phân thừa. Bảng mức phạt theo phút cũng đổi sang định dạng này.</li></ul>"
 }
