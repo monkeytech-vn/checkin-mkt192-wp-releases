@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.7.3",
+  "version": "5.3.7.4",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
   "last_updated": "2026-09-18",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.7.3.zip",
+  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.7.4.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.7.3</h4><ul><li>🧾 <strong>Báo cáo truy thu hoá đơn không ảnh lúc 23:00 mỗi ngày qua Lark</strong> (chủ VG yêu cầu): liệt kê hoá đơn trong ngày không có ảnh khách, không chọn lý do và không phải khách vãng lai, <strong>gom theo thợ làm dịch vụ</strong> trên hoá đơn (@mention), mỗi dòng mã HĐ · tên khách · giờ · giá trị · tiền dự kiến truy thu theo Cài đặt lương (VG đang 100% giá trị dịch vụ / hoá chất), có tổng cuối card. Ngày sạch vẫn gửi card xanh ngắn để biết cron còn sống. Bộ lọc dùng đúng luật truy thu không ảnh của module lương (bỏ ghi chú *Hệ thống bù*, lý do hợp lệ, khách vãng lai không phân biệt hoa thường) nên danh sách báo trùng với danh sách sẽ bị trừ khi tính lương.</li><li>🤖 Loại thông báo Lark mới <strong>\"Báo cáo truy thu hoá đơn không ảnh 23:00\"</strong> (<code>no_image_penalty_report</code>, webhook) trong Cài đặt → Bot Lark. Chưa gán bot thì tự dùng bot *Feedback &amp; Truy thu*, rồi bot *Nhắc nhở upload hình*.</li><li>⏰ Cron <code>daily_no_image_penalty_report</code> chạy 23:00 theo múi giờ WordPress, <strong>tự đăng ký lịch khi chưa có</strong> (site cập nhật plugin không cần kích hoạt lại). Bảng lịch trong activation ghi rõ giờ là giờ server (UTC trên VG), trước đây comment ghi giờ sai lệch.</li></ul>"
+  "changelog": "<h4>5.3.7.4</h4><ul><li>🧾 <strong>Báo cáo truy thu không ảnh 23:00 có template chỉnh được</strong> ở Checkin → Push Notifications → Hoá đơn (thẻ *Báo cáo truy thu không ảnh 23:00*): công tắc bật/tắt là công tắc chung của báo cáo; tiêu đề + nội dung (biến <code>{date} {total_invoices} {violations} {staff_count} {total_penalty} {staff_list}</code>) dùng làm header và dòng tóm tắt của card Lark, đồng thời <strong>push tóm tắt lên điện thoại</strong> cho vai trò đã chọn (mặc định Quản trị viên). Nút Test của trang gửi push mẫu như các thẻ khác.</li><li>🎨 <strong>Card Lark thiết kế lại gọn hơn</strong>: dòng tóm tắt theo template, 4 chỉ số 2 cột (hoá đơn trong ngày · vi phạm · mức truy thu · dự kiến truy thu), mỗi thợ một khối <code>@thợ · n HĐ · truy thu X</code>, từng hoá đơn một dòng mã · giờ · khách · giá trị (mức 100% không lặp lại số tiền). <strong>Bỏ câu \"bổ sung ảnh hoặc chọn lý do trước khi chốt lương thì không bị trừ\"</strong> theo yêu cầu chủ VG: không du di.</li></ul>"
 }
