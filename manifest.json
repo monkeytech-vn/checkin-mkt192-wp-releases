@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.7.0",
+  "version": "5.3.7.1",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
-  "last_updated": "2026-09-08",
+  "last_updated": "2026-09-18",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.7.0.zip",
+  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.7.1.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.7.0</h4><ul><li>🧾 <strong>Khối \"Truy thu kỳ này\" bố cục mới</strong>: tiêu đề và tổng tiền cùng dòng (canh phải, cùng cỡ chữ); mỗi hoá đơn một hàng 2 cột × 2 dòng - trái: *mã hoá đơn - tên khách* và badge lý do (nền đỏ nhạt, chữ đỏ đậm: *Hoá đơn không ảnh* / *Khách đánh giá thấp* / *Admin truy thu* / *Đã bỏ qua*); phải: ngày và tổng tiền hoá đơn kèm icon <strong>mắt</strong> (mở modal chi tiết hoá đơn: khách, SĐT, ảnh, lý do không ảnh, từng dòng dịch vụ - sản phẩm, dòng đã truy thu) và icon <strong>xoá</strong> (bỏ qua truy thu, admin) hoặc <strong>hoàn</strong> (khôi phục). Bỏ chữ \"Bỏ qua\" và chữ \"Dịch vụ - 840.000\". Phiếu trả thêm <code>invoice_briefs</code>.</li><li>✏️ Toàn bộ dấu gạch dài \"—\" trong giao diện lương / cài đặt / KPI / đồng bộ FB đổi thành \"-\".</li></ul>"
+  "changelog": "<h4>5.3.7.1</h4><ul><li>⏱ <strong>Trang Hoá đơn (app thợ) hiện đủ 2 mốc: giờ TẠO và giờ THANH TOÁN</strong> (chủ VG yêu cầu). Giờ thanh toán lấy từ <code>paid_at</code> (set đúng một lần khi hoá đơn chuyển sang đã thanh toán), KHÔNG phải giờ sửa gần nhất. Bảng desktop: cột *Thời gian* tách thành 2 cột <strong>Tạo lúc</strong> và <strong>Thanh toán lúc</strong> (giờ đậm, ngày nhỏ bên dưới; cột thanh toán ghi thêm số phút *17/9/26 · 13 phút*, còn phục vụ ghi *Chưa* vàng). Cột này có trong Cài đặt hiển thị cột (khoá, luôn hiện). Card mobile: bố cục mới, thêm dải timeline riêng dưới dòng dịch vụ - mốc *Tạo* bên trái nối sang mốc *Thanh toán* bên phải; đã thu thì đường nối liền + chấm xanh, còn phục vụ thì gạch đứt + chữ *Chưa* vàng; hoá đơn cũ đã thu nhưng thiếu <code>paid_at</code> hiện *Không rõ*. Giữa hai mốc ghim <strong>số phút từ lúc tạo đến lúc thanh toán</strong> (mobile: nhãn tròn cắt ngang đường nối). Modal chi tiết hoá đơn thêm dòng *Thanh toán lúc*.</li><li>🖼️ <strong>Bảng hoá đơn desktop gọn mắt hơn</strong>: cột Ảnh nới 64px, avatar vuông 38px bo góc (trước bị <code>.invoice-image</code> 112px của gallery bóp thành dải dọc trong ô 50px); cột Thao tác nới 150px để 4 nút Mời đánh giá / Gửi lại Zalo / Xoá / Truy thu nằm cùng một hàng thay vì mỗi nút một dòng.</li><li>🏷️ <strong>Giảm giá trên card mobile bỏ con dấu đè mép card</strong>: đổi sang kiểu giá e-commerce - tạm tính gạch ngang mờ ngay trên tổng tiền, kèm chip *Giảm 10.000 đ* đỏ nhạt nằm cùng hàng chip Tiền mặt / ZNS / Tips. Bảng desktop giữ cột Giảm giá như cũ.</li></ul>"
 }
