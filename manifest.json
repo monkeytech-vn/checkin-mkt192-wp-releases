@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.7.1",
+  "version": "5.3.7.2",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
   "last_updated": "2026-09-18",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.7.1.zip",
+  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.7.2.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.7.1</h4><ul><li>⏱ <strong>Trang Hoá đơn (app thợ) hiện đủ 2 mốc: giờ TẠO và giờ THANH TOÁN</strong> (chủ VG yêu cầu). Giờ thanh toán lấy từ <code>paid_at</code> (set đúng một lần khi hoá đơn chuyển sang đã thanh toán), KHÔNG phải giờ sửa gần nhất. Bảng desktop: cột *Thời gian* tách thành 2 cột <strong>Tạo lúc</strong> và <strong>Thanh toán lúc</strong> (giờ đậm, ngày nhỏ bên dưới; cột thanh toán ghi thêm số phút *17/9/26 · 13 phút*, còn phục vụ ghi *Chưa* vàng). Cột này có trong Cài đặt hiển thị cột (khoá, luôn hiện). Card mobile: bố cục mới, thêm dải timeline riêng dưới dòng dịch vụ - mốc *Tạo* bên trái nối sang mốc *Thanh toán* bên phải; đã thu thì đường nối liền + chấm xanh, còn phục vụ thì gạch đứt + chữ *Chưa* vàng; hoá đơn cũ đã thu nhưng thiếu <code>paid_at</code> hiện *Không rõ*. Giữa hai mốc ghim <strong>số phút từ lúc tạo đến lúc thanh toán</strong> (mobile: nhãn tròn cắt ngang đường nối). Modal chi tiết hoá đơn thêm dòng *Thanh toán lúc*.</li><li>🖼️ <strong>Bảng hoá đơn desktop gọn mắt hơn</strong>: cột Ảnh nới 64px, avatar vuông 38px bo góc (trước bị <code>.invoice-image</code> 112px của gallery bóp thành dải dọc trong ô 50px); cột Thao tác nới 150px để 4 nút Mời đánh giá / Gửi lại Zalo / Xoá / Truy thu nằm cùng một hàng thay vì mỗi nút một dòng.</li><li>🏷️ <strong>Giảm giá trên card mobile bỏ con dấu đè mép card</strong>: đổi sang kiểu giá e-commerce - tạm tính gạch ngang mờ ngay trên tổng tiền, kèm chip *Giảm 10.000 đ* đỏ nhạt nằm cùng hàng chip Tiền mặt / ZNS / Tips. Bảng desktop giữ cột Giảm giá như cũ.</li></ul>"
+  "changelog": "<h4>5.3.7.2</h4><ul><li>🔄 <strong>Nút \"Kiểm tra lại\" (Dashboard → Cập nhật) nay thấy bản plugin mới ngay</strong>: trước đây plugin cache manifest 6 giờ và nút này không phá được cache, nên sau mỗi lần phát hành phải vào hosting xoá transient thì site mới thấy. Nay khi WordPress gửi <code>force-check</code> plugin bỏ qua cache và tải manifest mới. Lịch kiểm tự động vẫn giữ cache 6 giờ như cũ.</li></ul>"
 }
