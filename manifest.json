@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.7.2",
+  "version": "5.3.7.3",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
   "last_updated": "2026-09-18",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.7.2.zip",
+  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.7.3.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.7.2</h4><ul><li>🔄 <strong>Nút \"Kiểm tra lại\" (Dashboard → Cập nhật) nay thấy bản plugin mới ngay</strong>: trước đây plugin cache manifest 6 giờ và nút này không phá được cache, nên sau mỗi lần phát hành phải vào hosting xoá transient thì site mới thấy. Nay khi WordPress gửi <code>force-check</code> plugin bỏ qua cache và tải manifest mới. Lịch kiểm tự động vẫn giữ cache 6 giờ như cũ.</li></ul>"
+  "changelog": "<h4>5.3.7.3</h4><ul><li>🧾 <strong>Báo cáo truy thu hoá đơn không ảnh lúc 23:00 mỗi ngày qua Lark</strong> (chủ VG yêu cầu): liệt kê hoá đơn trong ngày không có ảnh khách, không chọn lý do và không phải khách vãng lai, <strong>gom theo thợ làm dịch vụ</strong> trên hoá đơn (@mention), mỗi dòng mã HĐ · tên khách · giờ · giá trị · tiền dự kiến truy thu theo Cài đặt lương (VG đang 100% giá trị dịch vụ / hoá chất), có tổng cuối card. Ngày sạch vẫn gửi card xanh ngắn để biết cron còn sống. Bộ lọc dùng đúng luật truy thu không ảnh của module lương (bỏ ghi chú *Hệ thống bù*, lý do hợp lệ, khách vãng lai không phân biệt hoa thường) nên danh sách báo trùng với danh sách sẽ bị trừ khi tính lương.</li><li>🤖 Loại thông báo Lark mới <strong>\"Báo cáo truy thu hoá đơn không ảnh 23:00\"</strong> (<code>no_image_penalty_report</code>, webhook) trong Cài đặt → Bot Lark. Chưa gán bot thì tự dùng bot *Feedback &amp; Truy thu*, rồi bot *Nhắc nhở upload hình*.</li><li>⏰ Cron <code>daily_no_image_penalty_report</code> chạy 23:00 theo múi giờ WordPress, <strong>tự đăng ký lịch khi chưa có</strong> (site cập nhật plugin không cần kích hoạt lại). Bảng lịch trong activation ghi rõ giờ là giờ server (UTC trên VG), trước đây comment ghi giờ sai lệch.</li></ul>"
 }
