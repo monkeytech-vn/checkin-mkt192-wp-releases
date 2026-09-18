@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.7.5",
+  "version": "5.3.7.6",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
   "last_updated": "2026-09-18",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.7.5.zip",
+  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.7.6.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.7.5</h4><ul><li>🧮 <strong>Bảng chỉ số trên card báo cáo truy thu không ảnh nay chỉnh được</strong> trong Checkin → Push Notifications → thẻ *Báo cáo truy thu không ảnh 23:00*: 4 ô, mỗi ô sửa được <strong>nhãn</strong> và <strong>giá trị</strong> (dùng biến), nhãn để trống thì ẩn ô đó. Mặc định đổi thành <strong>Hoá đơn vi phạm</strong> <code>{violations}</code> · <strong>Thợ vi phạm</strong> <code>{staff_count}</code> · <strong>Mức truy thu</strong> <code>{penalty_rule}</code> · <strong>Dự kiến truy thu</strong> <code>{total_penalty}đ</code> (trước là \"Hoá đơn trong ngày\" và ô vi phạm gộp). Thêm biến <code>{penalty_rule}</code> (ví dụ *100% giá trị DV/HC*). Modal chỉnh sửa giờ khớp đúng những gì card gửi đi.</li><li>🎨 Ghi chú luật cuối card in đậm phần nhãn, in nghiêng phần nội dung, thêm icon cân ⚖️. Mã hoá đơn trong danh sách in đậm thay cho nền code.</li></ul>"
+  "changelog": "<h4>5.3.7.6</h4><ul><li>🧮 <strong>Khối \"Bảng chỉ số\" không hiện trong modal chỉnh sửa thông báo</strong> (5.3.7.5): hàm dựng 4 ô quên bật lại khối vốn ẩn mặc định, nên sửa nhãn / biến của bảng chỉ số trên card Lark là bất khả. Nay khối hiện đúng với loại thông báo có bảng chỉ số và vẫn ẩn với các loại khác.</li><li>➕ Mỗi ô có số thứ tự (Ô 1 đến Ô 4) và chú thích khi rê chuột. Bấm một biến ở mục *Biến có thể sử dụng* nay chèn vào <strong>ô vừa bấm</strong> (tiêu đề, nội dung hoặc ô bảng chỉ số) thay vì luôn chèn vào nội dung.</li></ul>"
 }
