@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.7.4",
+  "version": "5.3.7.5",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
   "last_updated": "2026-09-18",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.7.4.zip",
+  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.7.5.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.7.4</h4><ul><li>🧾 <strong>Báo cáo truy thu không ảnh 23:00 có template chỉnh được</strong> ở Checkin → Push Notifications → Hoá đơn (thẻ *Báo cáo truy thu không ảnh 23:00*): công tắc bật/tắt là công tắc chung của báo cáo; tiêu đề + nội dung (biến <code>{date} {total_invoices} {violations} {staff_count} {total_penalty} {staff_list}</code>) dùng làm header và dòng tóm tắt của card Lark, đồng thời <strong>push tóm tắt lên điện thoại</strong> cho vai trò đã chọn (mặc định Quản trị viên). Nút Test của trang gửi push mẫu như các thẻ khác.</li><li>🎨 <strong>Card Lark thiết kế lại gọn hơn</strong>: dòng tóm tắt theo template, 4 chỉ số 2 cột (hoá đơn trong ngày · vi phạm · mức truy thu · dự kiến truy thu), mỗi thợ một khối <code>@thợ · n HĐ · truy thu X</code>, từng hoá đơn một dòng mã · giờ · khách · giá trị (mức 100% không lặp lại số tiền). <strong>Bỏ câu \"bổ sung ảnh hoặc chọn lý do trước khi chốt lương thì không bị trừ\"</strong> theo yêu cầu chủ VG: không du di.</li></ul>"
+  "changelog": "<h4>5.3.7.5</h4><ul><li>🧮 <strong>Bảng chỉ số trên card báo cáo truy thu không ảnh nay chỉnh được</strong> trong Checkin → Push Notifications → thẻ *Báo cáo truy thu không ảnh 23:00*: 4 ô, mỗi ô sửa được <strong>nhãn</strong> và <strong>giá trị</strong> (dùng biến), nhãn để trống thì ẩn ô đó. Mặc định đổi thành <strong>Hoá đơn vi phạm</strong> <code>{violations}</code> · <strong>Thợ vi phạm</strong> <code>{staff_count}</code> · <strong>Mức truy thu</strong> <code>{penalty_rule}</code> · <strong>Dự kiến truy thu</strong> <code>{total_penalty}đ</code> (trước là \"Hoá đơn trong ngày\" và ô vi phạm gộp). Thêm biến <code>{penalty_rule}</code> (ví dụ *100% giá trị DV/HC*). Modal chỉnh sửa giờ khớp đúng những gì card gửi đi.</li><li>🎨 Ghi chú luật cuối card in đậm phần nhãn, in nghiêng phần nội dung, thêm icon cân ⚖️. Mã hoá đơn trong danh sách in đậm thay cho nền code.</li></ul>"
 }
