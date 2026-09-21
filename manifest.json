@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.8.3",
+  "version": "5.3.8.4",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
-  "last_updated": "2026-09-18",
+  "last_updated": "2026-09-21",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.8.3.zip",
+  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.8.4.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.8.3</h4><ul><li>👥 <strong>Chọn vai trò bị áp phạt đi trễ</strong> (Cài đặt lương → *Phạt đi trễ / về sớm* → *Áp dụng cho vai trò*): pill chọn nhiều vai trò, không chọn gì = áp cho tất cả như trước. Vai trò không được chọn thì <strong>không bị trừ tiền lúc chấm công</strong> và <strong>không xuất hiện trong báo cáo chấm công cuối ngày</strong> (cả ba nhóm: đi trễ, chưa chấm công vào, quên chấm công ra). Chủ VG dùng để loại quản lý và thu ngân ra khỏi danh sách nộp heo. Cột <code>apply_roles</code> của bảng <code>penalty_settings</code>, tự thêm khi cập nhật plugin (db <strong>8.9.0</strong>).</li><li>🎨 <strong>Modal cài đặt phạt thiết kế lại</strong>: ba khối rõ ràng (*Phạt tiền đi trễ*, *Áp dụng cho vai trò*, *Phạt biên bản*), công tắc kiểu mới có mô tả ngắn, hai nút chọn cách tính tiền phạt (*Một mức cố định* / *Theo số phút trễ*) thay cho công tắc khó hiểu, ô nhập có đơn vị đ / % / lần ngay bên trong.</li><li>💰 <strong>Số tiền hiển thị theo kiểu Việt Nam</strong>: gõ tới đâu tự chấm phần nghìn tới đó (<code>50.000</code> thay cho <code>50000,00</code>), bỏ hai số 0 thập phân thừa. Bảng mức phạt theo phút cũng đổi sang định dạng này.</li></ul>"
+  "changelog": "<h4>5.3.8.4</h4><ul><li>📱 <strong>App thợ báo \"The quota has been exceeded.\" khi tải ảnh khách, và báo \"Không thể tải danh sách chương trình khuyến mãi\" dù máy chủ vẫn bình thường</strong> (21/09 thợ Thế Giáp gặp): Safari trên iPhone chỉ cho mỗi trang web khoảng 5MB, khi đầy thì lệnh ghi bộ nhớ ném lỗi và lỗi đó nổi thẳng lên màn hình thợ, chặn cả hai việc. Rác chính là các bản sao danh sách hoá đơn đặt tên theo trình duyệt: <strong>mỗi lần iPhone nâng cấp là sinh khoá mới, khoá cũ nằm lại vĩnh viễn</strong>. Nay mọi thao tác ghi đi qua một lớp an toàn: hết chỗ thì tự dọn bản sao của thiết bị cũ và cache quá hạn rồi ghi lại, vẫn không đủ thì bỏ qua êm chứ không báo lỗi; ngoài ra mỗi lần lưu hoá đơn đều dọn sẵn bản sao cũ. Thợ không cần xoá cache tay nữa.</li><li>🖼️ <strong>Báo cáo truy thu không ảnh bắn nhầm gần hết hoá đơn trong ngày</strong>: ảnh khách đi hai chặng, trong ngày file nằm ở thư mục <code>temp</code> và cột <code>invoices_data.images</code> chưa có đường dẫn chính thức; chỉ khi cron <code>daily_reprocess_temp_files</code> chạy <strong>23:55</strong> ảnh mới được nén sang <code>.webp</code>, chuyển vào <code>customer_image/</code> và ghi vào cơ sở dữ liệu (bước này còn xoá đường dẫn tạm). Báo cáo đặt 23:05 đọc trước bước đó nên kết luận nhầm: tối 18/09 trên VG báo <strong>36/38 hoá đơn vi phạm, 3.890.000đ</strong>, nêu tên oan 5 thợ. Nay giờ mặc định là <strong>00:15</strong> (sau khi ảnh xử lý xong), ngày báo cáo tự lùi về ngày hôm trước. Báo cáo chấm công vẫn 23:00 vì không đọc dữ liệu ảnh.</li></ul>"
 }
