@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.8.4",
+  "version": "5.3.8.5",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
   "last_updated": "2026-09-21",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.8.4.zip",
+  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.8.5.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.8.4</h4><ul><li>📱 <strong>App thợ báo \"The quota has been exceeded.\" khi tải ảnh khách, và báo \"Không thể tải danh sách chương trình khuyến mãi\" dù máy chủ vẫn bình thường</strong> (21/09 thợ Thế Giáp gặp): Safari trên iPhone chỉ cho mỗi trang web khoảng 5MB, khi đầy thì lệnh ghi bộ nhớ ném lỗi và lỗi đó nổi thẳng lên màn hình thợ, chặn cả hai việc. Rác chính là các bản sao danh sách hoá đơn đặt tên theo trình duyệt: <strong>mỗi lần iPhone nâng cấp là sinh khoá mới, khoá cũ nằm lại vĩnh viễn</strong>. Nay mọi thao tác ghi đi qua một lớp an toàn: hết chỗ thì tự dọn bản sao của thiết bị cũ và cache quá hạn rồi ghi lại, vẫn không đủ thì bỏ qua êm chứ không báo lỗi; ngoài ra mỗi lần lưu hoá đơn đều dọn sẵn bản sao cũ. Thợ không cần xoá cache tay nữa.</li><li>🖼️ <strong>Báo cáo truy thu không ảnh bắn nhầm gần hết hoá đơn trong ngày</strong>: ảnh khách đi hai chặng, trong ngày file nằm ở thư mục <code>temp</code> và cột <code>invoices_data.images</code> chưa có đường dẫn chính thức; chỉ khi cron <code>daily_reprocess_temp_files</code> chạy <strong>23:55</strong> ảnh mới được nén sang <code>.webp</code>, chuyển vào <code>customer_image/</code> và ghi vào cơ sở dữ liệu (bước này còn xoá đường dẫn tạm). Báo cáo đặt 23:05 đọc trước bước đó nên kết luận nhầm: tối 18/09 trên VG báo <strong>36/38 hoá đơn vi phạm, 3.890.000đ</strong>, nêu tên oan 5 thợ. Nay giờ mặc định là <strong>00:15</strong> (sau khi ảnh xử lý xong), ngày báo cáo tự lùi về ngày hôm trước. Báo cáo chấm công vẫn 23:00 vì không đọc dữ liệu ảnh.</li></ul>"
+  "changelog": "<h4>5.3.8.5</h4><ul><li>🗂️ <strong>Nhật ký của tác vụ nền và báo cáo Lark không còn bị xoá khi cập nhật plugin</strong>: trước đây chúng nằm trong <code>includes/&lt;nhóm&gt;/logs/</code>, mà WordPress xoá cả thư mục plugin rồi mới giải nén bản mới, nên mỗi lần cập nhật là mất sạch. Đúng thứ cần để tra sự cố thì lại biến mất, đã cản trở hai lần điều tra trên VG. Nay ghi vào <code>uploads/checkin-mkt192-wp/logs/&lt;nhóm&gt;/</code> (có chặn truy cập từ trình duyệt, không ghi được thì tự quay về chỗ cũ). Áp cho nhóm xử lý ảnh và nhóm Lark, tổng 19 chỗ ghi.</li></ul>"
 }
