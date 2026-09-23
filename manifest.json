@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.8.5",
+  "version": "5.3.8.6",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
-  "last_updated": "2026-09-21",
+  "last_updated": "2026-09-23",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.8.5.zip",
+  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.8.6.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.8.5</h4><ul><li>🗂️ <strong>Nhật ký của tác vụ nền và báo cáo Lark không còn bị xoá khi cập nhật plugin</strong>: trước đây chúng nằm trong <code>includes/&lt;nhóm&gt;/logs/</code>, mà WordPress xoá cả thư mục plugin rồi mới giải nén bản mới, nên mỗi lần cập nhật là mất sạch. Đúng thứ cần để tra sự cố thì lại biến mất, đã cản trở hai lần điều tra trên VG. Nay ghi vào <code>uploads/checkin-mkt192-wp/logs/&lt;nhóm&gt;/</code> (có chặn truy cập từ trình duyệt, không ghi được thì tự quay về chỗ cũ). Áp cho nhóm xử lý ảnh và nhóm Lark, tổng 19 chỗ ghi.</li></ul>"
+  "changelog": "<h4>5.3.8.6</h4><ul><li>🪪 <strong>Đăng ký thành viên báo \"Không thể tạo tài khoản\" với mọi khách mới</strong> (VG 23/09): mã khách mới được tính bằng cách lấy mã lớn nhất rồi cộng một, nhưng câu truy vấn sắp mã theo <strong>chuỗi ký tự</strong> chứ không theo số, nên <code>KH999</code> bị coi là lớn hơn <code>KH1000</code>. Kết quả là hệ thống luôn sinh <code>KH1000</code> (đã có từ lâu) và cơ sở dữ liệu từ chối vì trùng mã; khách đã có số điện thoại trong hệ thống thì vẫn nâng hạng được vì luồng đó không cần mã mới. Nay tính mã theo giá trị số (VG: ra đúng <code>KH2681</code>), và nếu hai người đăng ký cùng lúc giành cùng một mã thì tự lấy mã kế tiếp thay vì báo lỗi.</li><li>🧯 Luồng thêm khách từ app thợ (mã <code>VG</code>) sửa cùng cách: đang chạy đúng vì mọi mã còn 4 chữ số (<code>VG9374</code>), nhưng sẽ kẹt y hệt khi vượt <code>VG9999</code>.</li></ul>"
 }
