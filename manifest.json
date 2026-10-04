@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.8.6",
+  "version": "5.3.8.7",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
-  "last_updated": "2026-09-23",
+  "last_updated": "2026-10-04",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.8.6.zip",
+  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.8.7.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.8.6</h4><ul><li>🪪 <strong>Đăng ký thành viên báo \"Không thể tạo tài khoản\" với mọi khách mới</strong> (VG 23/09): mã khách mới được tính bằng cách lấy mã lớn nhất rồi cộng một, nhưng câu truy vấn sắp mã theo <strong>chuỗi ký tự</strong> chứ không theo số, nên <code>KH999</code> bị coi là lớn hơn <code>KH1000</code>. Kết quả là hệ thống luôn sinh <code>KH1000</code> (đã có từ lâu) và cơ sở dữ liệu từ chối vì trùng mã; khách đã có số điện thoại trong hệ thống thì vẫn nâng hạng được vì luồng đó không cần mã mới. Nay tính mã theo giá trị số (VG: ra đúng <code>KH2681</code>), và nếu hai người đăng ký cùng lúc giành cùng một mã thì tự lấy mã kế tiếp thay vì báo lỗi.</li><li>🧯 Luồng thêm khách từ app thợ (mã <code>VG</code>) sửa cùng cách: đang chạy đúng vì mọi mã còn 4 chữ số (<code>VG9374</code>), nhưng sẽ kẹt y hệt khi vượt <code>VG9999</code>.</li></ul>"
+  "changelog": "<h4>5.3.8.7</h4><ul><li>🧮 <strong>Nhập lương theo giờ cho bậc thu ngân lại bị lưu vào ô \"Lương hoá chất (%)\"</strong> (VG 04/10: lưu bậc B+++ với 25.000đ/giờ thì ra lương giờ 0 và hoá chất 999,99, phiếu lương T9 của thu ngân Dịu Hoà về 0 giờ). Ở chế độ một chi nhánh, trang cài đặt ẩn mọi ô có lớp <code>col-branch</code>, nhưng tiêu đề <strong>\"Cấp bậc\"</strong> của bảng bậc lương bị gắn nhầm lớp đó: tiêu đề mất một ô trong khi phần thân vẫn đủ, nên <strong>mọi chữ tiêu đề trôi sang trái một cột</strong> và dưới chữ \"Lương theo giờ\" thật ra là ô lương hoá chất. Đo trên VG: 7 tiêu đề trên 8 ô. Cùng lỗi ở bảng <strong>Cài đặt cấp bậc</strong> (tiêu đề \"Cấp bậc\") và bảng <strong>Nhân viên</strong> (tiêu đề \"Email\"), cả ba đã sửa.</li><li>🛡️ Lương dịch vụ / hoá chất là phần trăm nhưng trước đây nhận mọi số, và cơ sở dữ liệu tự cắt số lớn về 999,99 mà không báo. Nay form và máy chủ đều <strong>chặn ngoài khoảng 0-100</strong> kèm lời nhắc nhập tiền vào ô \"Lương theo giờ\". Nút lưu cũng <strong>báo lỗi thật</strong> khi máy chủ từ chối, thay vì luôn hiện \"Cập nhật cấp lương thành công\".</li></ul>"
 }
