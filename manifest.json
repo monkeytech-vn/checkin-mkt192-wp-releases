@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.8.7",
+  "version": "5.3.8.8",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
-  "last_updated": "2026-10-04",
+  "last_updated": "2026-10-11",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.8.7.zip",
+  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.8.8.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.8.7</h4><ul><li>🧮 <strong>Nhập lương theo giờ cho bậc thu ngân lại bị lưu vào ô \"Lương hoá chất (%)\"</strong> (VG 04/10: lưu bậc B+++ với 25.000đ/giờ thì ra lương giờ 0 và hoá chất 999,99, phiếu lương T9 của thu ngân Dịu Hoà về 0 giờ). Ở chế độ một chi nhánh, trang cài đặt ẩn mọi ô có lớp <code>col-branch</code>, nhưng tiêu đề <strong>\"Cấp bậc\"</strong> của bảng bậc lương bị gắn nhầm lớp đó: tiêu đề mất một ô trong khi phần thân vẫn đủ, nên <strong>mọi chữ tiêu đề trôi sang trái một cột</strong> và dưới chữ \"Lương theo giờ\" thật ra là ô lương hoá chất. Đo trên VG: 7 tiêu đề trên 8 ô. Cùng lỗi ở bảng <strong>Cài đặt cấp bậc</strong> (tiêu đề \"Cấp bậc\") và bảng <strong>Nhân viên</strong> (tiêu đề \"Email\"), cả ba đã sửa.</li><li>🛡️ Lương dịch vụ / hoá chất là phần trăm nhưng trước đây nhận mọi số, và cơ sở dữ liệu tự cắt số lớn về 999,99 mà không báo. Nay form và máy chủ đều <strong>chặn ngoài khoảng 0-100</strong> kèm lời nhắc nhập tiền vào ô \"Lương theo giờ\". Nút lưu cũng <strong>báo lỗi thật</strong> khi máy chủ từ chối, thay vì luôn hiện \"Cập nhật cấp lương thành công\".</li></ul>"
+  "changelog": "<h4>5.3.8.8</h4><ul><li>🔁 <strong>Nhân viên xác nhận phiếu lương thì quản lý nhận 2-3 thông báo trùng nhau</strong> (VG 11/10): bấm \"Đồng ý phiếu lương\" thì máy chủ cập nhật rồi gửi thông báo và <strong>chờ Lark trả lời (có thể tới 30 giây)</strong>, trong lúc đó nút không đổi gì nên nhân viên tưởng chưa bấm được và bấm tiếp, mỗi lần bấm là một thông báo. Nay các nút <strong>Đồng ý phiếu lương, Xin xét lại, Đã nhận đủ lương, Thanh toán lương</strong> chuyển sang trạng thái chờ (spinner, \"Đang xác nhận...\") và khoá lại cho tới khi có kết quả, lỗi thì mở lại để bấm lần nữa. Máy chủ cũng chỉ ghi và gửi thông báo khi trạng thái <strong>thực sự đổi</strong>: bấm lặp hoặc hai yêu cầu đến cùng lúc thì yêu cầu sau không bắn thêm thông báo nào.</li><li>🧾 <strong>Nhân viên mới vào giữa kỳ không hiện trong danh sách lương</strong> (VG: thu ngân Yến Nhi bắt đầu 23/09 nhưng không có trong lương T9 cho tới khi tự mở phiếu của mình): danh sách chỉ hiện người đã có phiếu, mà nút \"Tính lương kỳ này\" chỉ có khi kỳ còn trống. Nay kỳ đã có phiếu vẫn có nút <strong>Tính lại kỳ này</strong> ngay dưới khối tổng quan.</li><li>🔒 <strong>Tính lương hàng loạt ghi đè cả phiếu đã chốt</strong>: trước đây bấm tính lương cho thợ hoặc thu ngân là tính lại mọi người trong kỳ, kể cả phiếu nhân viên đã đồng ý, đã chuyển khoản hoặc đã nhận đủ. Nay các phiếu đó được giữ nguyên và thông báo sau khi tính ghi rõ tên người được giữ.</li></ul>"
 }
