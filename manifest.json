@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.9.1",
+  "version": "5.3.9.2",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
-  "last_updated": "2026-10-15",
+  "last_updated": "2026-10-16",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.9.1.zip",
+  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.9.2.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.9.1</h4><ul><li>📱 <strong>Modal thanh toán làm lại theo kiểu app native</strong> (app thợ và màn hình khách dùng chung): trên điện thoại là bottom sheet trượt từ dưới lên, trên máy tính là thẻ giữa màn hình. Tiêu đề và chân nút đứng yên, chỉ phần giữa cuộn, nên nút <strong>Xác nhận đã thanh toán</strong> luôn nằm sát đáy, không trôi theo nội dung. QR vẫn lớn; số tiền đưa lên ngay trên QR, chữ to; thanh chọn phương thức kiểu segmented, dải tài khoản, nội dung chuyển khoản và trạng thái tự kiểm tra thu gọn còn một hàng. Có cả chế độ tối.</li><li>✖️ <strong>Nút Huỷ cạnh nút xác nhận</strong>: dừng tự kiểm tra, đóng modal và bỏ mã chuyển khoản đang chờ, mở lại thanh toán sẽ tạo mã mới; không còn giao dịch chờ khớp chạy ngầm. Nút X ở góc chỉ đóng và dừng kiểm tra, giữ mã cũ để mở lại vẫn ra đúng QR khách có thể đã quét.</li><li>💰 <strong>Thẻ Lark \"Biến động số dư\" gọn hơn</strong>: thời gian lên cạnh tiêu đề (\"💰 Lúa về... | 16:34 15/10/2026\"), lưới hai cột Ngân hàng | Số TK, Hoá đơn | Trạng thái.</li></ul>"
+  "changelog": "<h4>5.3.9.2</h4><ul><li>💳 <strong>Màn khách tại quầy (máy tính bảng) tự xác nhận chuyển khoản như app thợ</strong>: máy tính bảng chạy không đăng nhập nên bị chặn khi tạo mã chuyển khoản MonkeyPay. Trang khi đó tự sinh một mã tại máy mà máy chủ MonkeyPay không biết, nên khách quét QR xong tiền vẫn về nhưng không khớp hoá đơn, thu ngân phải bấm xác nhận tay và thẻ Lark \"Lúa về\" không có dòng hoá đơn. Nay máy tính bảng tạo, theo dõi và huỷ được mã cho <strong>đúng hoá đơn thu ngân vừa gửi sang quầy trong 12 giờ gần đây</strong>; hoá đơn chỉ được chốt khi MonkeyPay xác nhận tiền đã về.</li><li>⚠️ Nếu vẫn không tạo được mã (mất mạng, MonkeyPay lỗi), màn hình báo rõ \"Không tự xác nhận được, thu ngân vui lòng xác nhận sau khi khách chuyển khoản\" thay vì im lặng.</li></ul>"
 }
