@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.9.2",
+  "version": "5.3.9.3",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
-  "last_updated": "2026-10-16",
+  "last_updated": "2026-10-17",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.9.2.zip",
+  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.9.3.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.9.2</h4><ul><li>💳 <strong>Màn khách tại quầy (máy tính bảng) tự xác nhận chuyển khoản như app thợ</strong>: máy tính bảng chạy không đăng nhập nên bị chặn khi tạo mã chuyển khoản MonkeyPay. Trang khi đó tự sinh một mã tại máy mà máy chủ MonkeyPay không biết, nên khách quét QR xong tiền vẫn về nhưng không khớp hoá đơn, thu ngân phải bấm xác nhận tay và thẻ Lark \"Lúa về\" không có dòng hoá đơn. Nay máy tính bảng tạo, theo dõi và huỷ được mã cho <strong>đúng hoá đơn thu ngân vừa gửi sang quầy trong 12 giờ gần đây</strong>; hoá đơn chỉ được chốt khi MonkeyPay xác nhận tiền đã về.</li><li>⚠️ Nếu vẫn không tạo được mã (mất mạng, MonkeyPay lỗi), màn hình báo rõ \"Không tự xác nhận được, thu ngân vui lòng xác nhận sau khi khách chuyển khoản\" thay vì im lặng.</li></ul>"
+  "changelog": "<h4>5.3.9.3</h4><ul><li>🔀 <strong>Nút gạt \"QR có sẵn số tiền\" cho từng tài khoản nhận tiền</strong> (Cài đặt Thanh toán &gt; Chuyển khoản ngân hàng): bật thì QR điền sẵn số tiền và chỉ tự xác nhận khi khách chuyển đúng số tiền; tắt thì khách tự nhập số tiền, tự xác nhận theo nội dung chuyển khoản. Trước đây chỉ là nhãn đọc từ MonkeyPay, muốn đổi phải vào MonkeyPay. Tài khoản chưa chỉnh vẫn theo cài đặt cổng trên MonkeyPay; chỉnh khác thì thẻ ghi \"Khác cài đặt trên MonkeyPay\".</li></ul>"
 }
