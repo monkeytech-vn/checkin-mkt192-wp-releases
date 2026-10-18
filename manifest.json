@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.9.6",
+  "version": "5.3.9.7",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
   "last_updated": "2026-10-18",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.9.6.zip",
+  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.9.7.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.9.6</h4><ul><li>📱 <strong>Footer trang chủ trên điện thoại gọn lại</strong>: cột Liên hệ cách dải bản quyền hơn 100px (đệm 40px, lề 40px và đệm 25px cộng dồn), nay còn khoảng 47px. Dòng bản quyền và dòng \"Thiết kế và phát triển bởi monkeytech.vn\" xuống hai dòng ngay ngắn, không còn dấu \"·\" treo cuối dòng. Giao diện máy tính giữ nguyên.</li></ul>"
+  "changelog": "<h4>5.3.9.7</h4><ul><li>📈 <strong>Link \"monkeytech.vn\" ở footer trang chủ, chính sách, điều khoản và app thợ kèm mã đo</strong> (<code>utm_source</code> = tên miền của tiệm, <code>utm_medium</code> = footer hoặc app-tho, <code>utm_campaign</code> = credit) để biết mỗi tiệm đưa bao nhiêu lượt sang monkeytech.vn. Chữ trên link vẫn là tên thương hiệu.</li></ul>"
 }
