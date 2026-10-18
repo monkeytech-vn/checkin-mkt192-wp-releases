@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.9.4",
+  "version": "5.3.9.5",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
   "last_updated": "2026-10-18",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.9.4.zip",
+  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.9.5.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.9.4</h4><ul><li>🏷️ <strong>Footer: năm bản quyền theo năm tiệm bắt đầu hoạt động</strong>: thêm ô \"Năm bắt đầu hoạt động\" ở Cài đặt thương hiệu &gt; Thông tin. Điền 2016 thì cuối trang hiện \"© 2016 Tên tiệm\"; để trống thì vẫn là năm hiện tại như trước. Áp cho trang chủ, chính sách, điều khoản, đăng ký thành viên và hai trang đánh giá.</li><li>🤝 <strong>Ghi công đơn vị phát triển</strong>: trang chủ, trang chính sách và điều khoản hiện \"Thiết kế và phát triển bởi monkeytech.vn\" cùng dòng với bản quyền, có liên kết tới monkeytech.vn.</li></ul>"
+  "changelog": "<h4>5.3.9.5</h4><ul><li>🏷️ <strong>Bản quyền ghi khoảng năm</strong>: \"© 2016 - 2026 Tên tiệm\" (từ năm bắt đầu hoạt động tới năm hiện tại, năm sau tự lên 2027). Chưa điền năm bắt đầu thì chỉ hiện năm hiện tại.</li><li>🤝 <strong>Footer app thợ</strong> gọn lại \"Designed with ♥ by monkeytech.vn\", liên kết tới monkeytech.vn; năm bản quyền theo cùng quy tắc trên.</li></ul>"
 }
