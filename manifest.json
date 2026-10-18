@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.9.3",
+  "version": "5.3.9.4",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
-  "last_updated": "2026-10-17",
+  "last_updated": "2026-10-18",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.9.3.zip",
+  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.9.4.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.9.3</h4><ul><li>🔀 <strong>Nút gạt \"QR có sẵn số tiền\" cho từng tài khoản nhận tiền</strong> (Cài đặt Thanh toán &gt; Chuyển khoản ngân hàng): bật thì QR điền sẵn số tiền và chỉ tự xác nhận khi khách chuyển đúng số tiền; tắt thì khách tự nhập số tiền, tự xác nhận theo nội dung chuyển khoản. Trước đây chỉ là nhãn đọc từ MonkeyPay, muốn đổi phải vào MonkeyPay. Tài khoản chưa chỉnh vẫn theo cài đặt cổng trên MonkeyPay; chỉnh khác thì thẻ ghi \"Khác cài đặt trên MonkeyPay\".</li></ul>"
+  "changelog": "<h4>5.3.9.4</h4><ul><li>🏷️ <strong>Footer: năm bản quyền theo năm tiệm bắt đầu hoạt động</strong>: thêm ô \"Năm bắt đầu hoạt động\" ở Cài đặt thương hiệu &gt; Thông tin. Điền 2016 thì cuối trang hiện \"© 2016 Tên tiệm\"; để trống thì vẫn là năm hiện tại như trước. Áp cho trang chủ, chính sách, điều khoản, đăng ký thành viên và hai trang đánh giá.</li><li>🤝 <strong>Ghi công đơn vị phát triển</strong>: trang chủ, trang chính sách và điều khoản hiện \"Thiết kế và phát triển bởi monkeytech.vn\" cùng dòng với bản quyền, có liên kết tới monkeytech.vn.</li></ul>"
 }
