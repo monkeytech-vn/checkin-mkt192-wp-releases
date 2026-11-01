@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.9.7",
+  "version": "5.3.9.8",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
-  "last_updated": "2026-10-18",
+  "last_updated": "2026-11-01",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.9.7.zip",
+  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.9.8.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.9.7</h4><ul><li>📈 <strong>Link \"monkeytech.vn\" ở footer trang chủ, chính sách, điều khoản và app thợ kèm mã đo</strong> (<code>utm_source</code> = tên miền của tiệm, <code>utm_medium</code> = footer hoặc app-tho, <code>utm_campaign</code> = credit) để biết mỗi tiệm đưa bao nhiêu lượt sang monkeytech.vn. Chữ trên link vẫn là tên thương hiệu.</li></ul>"
+  "changelog": "<h4>5.3.9.8</h4><ul><li>App thợ giữ nguyên danh sách dịch vụ và ảnh khi đọc lại dữ liệu dạng mảng đã lưu trên máy.</li><li>Bill đã thanh toán được khôi phục dịch vụ, số tiền và trạng thái từ server dù bản trên máy còn đánh dấu đang sửa. Bill chưa thanh toán vẫn giữ thay đổi chưa lưu.</li><li>Danh sách bill của thợ bao gồm cả bill do chính thợ đó tạo cho thợ khác thực hiện, trong phạm vi thời gian và chi nhánh được chọn.</li></ul>"
 }
