@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.9.10",
+  "version": "5.3.9.11",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
   "last_updated": "2026-11-02",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.9.10.zip",
+  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.9.11.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.9.10</h4><ul><li>Cấu hình Zalo OA (app secret, access token, refresh token) và danh sách mẫu ZNS chỉ quản trị viên đọc và sửa được. Trước đây các API này mở công khai.</li><li>Kết nối Zalo OA kiểm mã xác nhận (state) do chính trang Connections cấp, hết hạn sau 30 phút, nên không ai gửi được mã giả vào trang callback.</li><li>Khoá PayOS, khoá webhook PayOS, token xác minh Lark, webhook bot Lark báo phiếu lương và token API hệ thống không còn nằm trong mã nguồn. Plugin đọc các giá trị này từ <code>wp-config.php</code> hoặc cấu hình trong cơ sở dữ liệu; thiếu giá trị thì từ chối yêu cầu thay vì dùng khoá mặc định.</li><li>Tiệm có dùng PayOS, phê duyệt qua Lark, thông báo phiếu lương qua Lark hoặc API <code>/system/*</code> cần khai các giá trị mới trước khi cập nhật, xem <code>includes/helpers/secrets.php</code>. Các khoá cũ đã lộ trong mã nguồn nên cần tạo khoá mới ở PayOS và Lark.</li></ul>"
+  "changelog": "<h4>5.3.9.11</h4><ul><li>Thông báo xác nhận phiếu lương tới nhóm quản lý gửi qua bot đã gán loại \"Xác nhận phiếu lương (Group quản lý)\" trong trang quản lý bot Lark của plugin, thay cho địa chỉ webhook viết cứng trong mã. Đổi nhóm hoặc đổi bot chỉ cần sửa trong trang quản lý bot, không cần khai thêm gì trong <code>wp-config.php</code>.</li></ul>"
 }
