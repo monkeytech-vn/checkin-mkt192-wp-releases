@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.9.9",
+  "version": "5.3.9.10",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
   "last_updated": "2026-11-02",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.9.9.zip",
+  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.9.10.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.9.9</h4><ul><li>Không tự tính lương khi mở phiếu, tính lương hàng loạt hoặc tạo thẻ hoa hồng hàng loạt cho nhân viên đã nghỉ việc (ARCHIVED). OFF và PAUSE vẫn được tính; admin vẫn có thể tính riêng kỳ lương cuối của người đã nghỉ.</li><li>Đồng bộ Facebook đọc cả bài viết và video tải lên, gồm Reels được Facebook cung cấp, đọc tiếp các trang dữ liệu và tự bổ sung nội dung tháng hiện tại cùng tháng trước khi đồng bộ.</li><li>Không bỏ các bài thứ hai trở đi trong cùng ngày; phân kỳ theo giờ Việt Nam, gồm đầy đủ ngày cuối tháng.</li><li>Nhận diện nội dung xuất hiện ở cả bài viết và video để tránh ghi trùng. Các màn KPI đếm mã bài riêng biệt, giữ nguyên dữ liệu lịch sử.</li><li>Báo rõ dữ liệu Facebook chưa đầy đủ khi thiếu quyền đọc hoặc lỗi phân trang; bổ sung quyền user_videos vào luồng kết nối.</li></ul>"
+  "changelog": "<h4>5.3.9.10</h4><ul><li>Cấu hình Zalo OA (app secret, access token, refresh token) và danh sách mẫu ZNS chỉ quản trị viên đọc và sửa được. Trước đây các API này mở công khai.</li><li>Kết nối Zalo OA kiểm mã xác nhận (state) do chính trang Connections cấp, hết hạn sau 30 phút, nên không ai gửi được mã giả vào trang callback.</li><li>Khoá PayOS, khoá webhook PayOS, token xác minh Lark, webhook bot Lark báo phiếu lương và token API hệ thống không còn nằm trong mã nguồn. Plugin đọc các giá trị này từ <code>wp-config.php</code> hoặc cấu hình trong cơ sở dữ liệu; thiếu giá trị thì từ chối yêu cầu thay vì dùng khoá mặc định.</li><li>Tiệm có dùng PayOS, phê duyệt qua Lark, thông báo phiếu lương qua Lark hoặc API <code>/system/*</code> cần khai các giá trị mới trước khi cập nhật, xem <code>includes/helpers/secrets.php</code>. Các khoá cũ đã lộ trong mã nguồn nên cần tạo khoá mới ở PayOS và Lark.</li></ul>"
 }
