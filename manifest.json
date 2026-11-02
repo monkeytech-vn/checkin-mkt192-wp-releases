@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.9.8",
+  "version": "5.3.9.9",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
-  "last_updated": "2026-11-01",
+  "last_updated": "2026-11-02",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.9.8.zip",
+  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.9.9.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.9.8</h4><ul><li>App thợ giữ nguyên danh sách dịch vụ và ảnh khi đọc lại dữ liệu dạng mảng đã lưu trên máy.</li><li>Bill đã thanh toán được khôi phục dịch vụ, số tiền và trạng thái từ server dù bản trên máy còn đánh dấu đang sửa. Bill chưa thanh toán vẫn giữ thay đổi chưa lưu.</li><li>Danh sách bill của thợ bao gồm cả bill do chính thợ đó tạo cho thợ khác thực hiện, trong phạm vi thời gian và chi nhánh được chọn.</li></ul>"
+  "changelog": "<h4>5.3.9.9</h4><ul><li>Không tự tính lương khi mở phiếu, tính lương hàng loạt hoặc tạo thẻ hoa hồng hàng loạt cho nhân viên đã nghỉ việc (ARCHIVED). OFF và PAUSE vẫn được tính; admin vẫn có thể tính riêng kỳ lương cuối của người đã nghỉ.</li><li>Đồng bộ Facebook đọc cả bài viết và video tải lên, gồm Reels được Facebook cung cấp, đọc tiếp các trang dữ liệu và tự bổ sung nội dung tháng hiện tại cùng tháng trước khi đồng bộ.</li><li>Không bỏ các bài thứ hai trở đi trong cùng ngày; phân kỳ theo giờ Việt Nam, gồm đầy đủ ngày cuối tháng.</li><li>Nhận diện nội dung xuất hiện ở cả bài viết và video để tránh ghi trùng. Các màn KPI đếm mã bài riêng biệt, giữ nguyên dữ liệu lịch sử.</li><li>Báo rõ dữ liệu Facebook chưa đầy đủ khi thiếu quyền đọc hoặc lỗi phân trang; bổ sung quyền user_videos vào luồng kết nối.</li></ul>"
 }
