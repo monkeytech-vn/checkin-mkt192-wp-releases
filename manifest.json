@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.9.12",
+  "version": "5.3.9.13",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
-  "last_updated": "2026-11-04",
+  "last_updated": "2026-11-07",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.9.12.zip",
+  "package": "https://raw.githubusercontent.com/monkeytech-vn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.9.13.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.9.12</h4><ul><li>Xin đồng ý đúng luật bảo vệ dữ liệu cá nhân: form đăng ký thành viên và đặt lịch có ô đồng ý để trống sẵn (nêu mục đích, có link chính sách), nút gửi khoá tới khi tích; ô nhận ưu đãi tách riêng, không bắt buộc. Máy chủ kiểm lại ô đồng ý và phiên bản văn bản; mỗi lần đồng ý ghi vào nhật ký chỉ thêm. Khách mới đăng nhập bằng Google, Facebook đi qua màn \"Hoàn tất\" có ô đồng ý.</li><li>Nhân viên do cửa hàng tạo tài khoản thấy màn xác nhận một lần khi vào App Thợ, Điểm danh, Dashboard, Quản lý: nêu rõ cửa hàng quản lý chấm công, ca làm, vị trí lúc điểm danh, lương thưởng phạt. Trang Điểm danh chỉ xin vị trí sau khi nhân viên đồng ý.</li><li>Điều khoản và Chính sách bỏ câu \"sử dụng là đồng ý\".</li><li>Trang đặt lịch không còn tràn ngang trên điện thoại.</li><li>Lưu ý cho đơn vị tích hợp: <code>POST /wp-json/vg/v1/customer-registration</code> và <code>/bookings</code> bắt buộc gửi <code>agree</code> và <code>legal_version</code> (xem <code>docs/PUBLIC_APIS.md</code>).</li></ul>"
+  "changelog": "<h4>5.3.9.13</h4><ul><li>Truy thu đánh giá thấp chỉ áp dụng cho hoá đơn thuộc đúng kỳ lương đang tính. Không gom đánh giá của các tháng đã trả lương sang kỳ mới; ngày đánh giá không làm đổi kỳ hoá đơn. Hoá đơn không xác định được ngày không tự truy thu.</li><li>Khi tính lại phiếu chưa chốt, các khoản truy thu bù do hệ thống tạo trước đó được tính lại theo quy tắc mới. Phiếu đã chốt tiếp tục được giữ nguyên.</li><li>Kênh cập nhật thêm gói mới bằng commit thông thường, giữ các gói cũ và lịch sử, không force push.</li></ul>"
 }
